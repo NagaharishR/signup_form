@@ -37,41 +37,77 @@ class MyCustomFormState extends State<MyCustomForm> {
             Text("SignUp Form"),
             Padding(padding: EdgeInsets.all(10),
               child: TextFormField(
+                validator: (value){
+                  if (value== null || value.isEmpty){
+                    return 'Please Enter Data';
+                  }
+                  return null;
+                },
                 decoration: InputDecoration(
                     hintText: "Please Enter Name"
                 ),
               ),
             ),
             Padding(padding: EdgeInsets.all(10),
-              child: TextField(
+              child: TextFormField(
+                validator: (value){
+                  if (value== null || value.isEmpty){
+                    return 'Please Enter Data';
+                  }
+                  return null;
+                },
                 decoration: InputDecoration(
                     hintText: "Please Enter Your Phone Number"
                 ),
               ),
             ),
             Padding(padding: EdgeInsets.all(10),
-            child: TextField(
+            child: TextFormField(
+              validator: (value){
+                if (value== null || value.isEmpty){
+                  return 'Please Enter Data';
+                }
+                return null;
+              },
               decoration: InputDecoration(
                 hintText: "Please Enter Your DOB"
               ),
             ),
             ),
             Padding(padding: EdgeInsets.all(10),
-              child: TextField(
+              child: TextFormField(
+                validator: (value){
+                  if (value== null || value.isEmpty){
+                    return 'Please Enter Data';
+                  }
+                  return null;
+                },
                 decoration: InputDecoration(
                     hintText: "Enter Your Email"
                 ),
               ),
             ),
             Padding(padding: EdgeInsets.all(10),
-            child: TextField(
+            child: TextFormField(
+              validator: (value){
+                if (value== null || value.isEmpty){
+                  return 'Please Enter Data';
+                }
+                return null;
+              },
               decoration: InputDecoration(
                 hintText: "Enter Password"
               ),
             ),
             ),
             Padding(padding: EdgeInsets.all(10),
-            child: TextField(
+            child: TextFormField(
+              validator: (value){
+                if (value== null || value.isEmpty){
+                  return 'Please Enter Data';
+                }
+                return null;
+              },
               decoration: InputDecoration(
                 hintText: "Confirm Password"
               ),
